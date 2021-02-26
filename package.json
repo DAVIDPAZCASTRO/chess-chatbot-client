@@ -1,0 +1,23 @@
+{
+  "name": "chess-board",
+  "version": "1.0.0",
+  "description": "Use `serve .` to show index.html file in localhost:5000",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DAVIDPAZCASTRO/chess-chatbot-client.git"
+  },
+  "author": "david paz castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DAVIDPAZCASTRO/chess-chatbot-client/issues"
+  },
+  "homepage": "https://github.com/DAVIDPAZCASTRO/chess-chatbot-client#readme",
+  "dependencies": {
+    "socket.io": "^3.1.2",
+    "socket.io-client": "^3.1.2"
+  }
+}

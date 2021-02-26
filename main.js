@@ -1,4 +1,4 @@
-import { createSocket } from "./ws.js";
+import { createSocket } from "./socket.js";
 
 const socket = createSocket();
 
@@ -36,7 +36,7 @@ const onDragStart = (square, piece) => {
 const onDrop = (from, to) => {
   let move = game.move({ from, to, promotion: "q" });
   if (!move) return "snapback";
-  socket.send(JSON.stringify(move));
+  socket.send('move', JSON.stringify(move));
   if (game.game_over()) alert("Game over!");
 };
 
